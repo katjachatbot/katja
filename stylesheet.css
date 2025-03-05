@@ -1,6 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Sevillana");
-
-
-:host{
-  --fonts-default: 'Sevillana', cursive;
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/path/to/fonts/Montserrat-Regular.woff2') format('woff2'),
+         url('/path/to/fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/path/to/fonts/Montserrat-Bold.woff2') format('woff2'),
+         url('/path/to/fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:host {
+    --fonts-default: 'Montserrat', sans-serif;
+}
+
